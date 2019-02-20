@@ -13,7 +13,6 @@ const config={
     path: path.join(__dirname,'dist')
   },
   module: {
-    
     rules:[
       {
         test: /\.vue$/,
@@ -23,27 +22,6 @@ const config={
         test: /\.jsx$/,
         loader: 'babel-loader'
       },
-      // {
-      //   test: /\.css$/,
-      //   use: [
-      //     'style-loader',
-      //     'css-loader'
-      //   ]
-      // },
-      // {
-      //   test: /\.styl$/,
-      //   use: [
-      //     'style-loader',
-      //     'css-loader',
-      //     {
-      //       loader: 'postcss-loader',
-      //       options: {
-      //         sourceMap: true,
-      //       }
-      //     },
-      //     'stylus-loader'
-      //   ]
-      // },
       {
         test: /\.(gif|jpg|jpeg|png|svg)$/,
         use: [
